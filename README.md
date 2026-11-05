@@ -2,39 +2,51 @@
 
 Welcome to Fusheng Group!
 
-Documentation site for **Fusheng Group**, built with [Astro](https://astro.build)
-and [Starlight](https://starlight.astro.build).
+Built with the official [Starlight Starter Kit: Basics](https://github.com/withastro/starlight/tree/main/examples/basics)
+template (`@astrojs/starlight`), with site branding set to **Fusheng Group** in `astro.config.mjs`.
 
 ## 🚀 Project Structure
 
-```text
+Inside of your Astro + Starlight project, you'll see the following folders and files:
+
+```
+.
+├── public/
 ├── src/
 │   ├── assets/
 │   ├── content/
-│   │   └── docs/          # ← 所有文档页面都在这里
-│   ├── content.config.ts
-│   └── env.d.ts
+│   │   └── docs/
+│   └── content.config.ts
 ├── astro.config.mjs
 ├── package.json
 └── tsconfig.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory.
-Each file is exposed as a route based on its file name.
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+
+Static assets, like favicons, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command             | Action                                           |
-| :------------------ | :----------------------------------------------- |
-| `npm install`       | Installs dependencies                            |
-| `npm run dev`       | Starts local dev server at `localhost:4321`      |
-| `npm run build`     | Build your production site to `./dist/`          |
-| `npm run preview`   | Preview your build locally, before deploying     |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro check` |
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 📦 Registry
+
+`.npmrc` pins the **official** npm registry (`registry.npmjs.org`).
+If that ever becomes slow or unreachable, swap in the mirror line commented
+inside `.npmrc` and re-run `npm install`.
 
 ## 👀 Want to learn more?
 
-Check out [Starlight's docs](https://starlight.astro.build/), read
-[the Astro documentation](https://docs.astro.build).
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
